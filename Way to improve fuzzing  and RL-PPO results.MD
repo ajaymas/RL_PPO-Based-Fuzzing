@@ -140,8 +140,7 @@ plt.show()
 ```
 Comparison tables for crash discovery rate and RL algorithm performance.
 
-![comparison tables for crash discovery rate and RL algorithm performance.](images/comparison tables.png)
-![Graph (Fig. 2): Line graph showing code coverage over time for AFL++ vs. AFL++ + PPO](images/Code_coverage_over_time.png)
+![Graph (Fig. 2): Line graph showing code coverage over time for AFL++ vs. AFL++ + PPO](images/comparison_tables.png)
 
 Table I compares the number of unique crashes found, the time to first crash, and the total crashes discovered. The PPO-enhanced approach identified more vulnerabilities in a shorter time frame.
 
