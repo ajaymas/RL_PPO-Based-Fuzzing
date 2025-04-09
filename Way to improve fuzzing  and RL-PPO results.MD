@@ -2,15 +2,10 @@
 
 ## 1. Environment Configuration
 
-#### 1) Environment Configuration
 The experiments were conducted on a Kali Linux virtual machine with 8 GB RAM and four processors. The test binaries were executed within isolated containers to ensure security during fuzzing. AFL++, PyTorch, and necessary dependencies were installed to support both fuzzing and reinforcement learning processes
 
 ### System Specifications
 (Table 1) Listing OS, CPU, RAM, installed software (AFL++, PyTorch, PPO settings).
-
-### Target Binaries
-OpenSSL, Uroboros SPEC CPU2006 benchmarks.
-
 ### Table 1: Experimental Environment
 
 | Component       | Details                |
@@ -23,10 +18,8 @@ OpenSSL, Uroboros SPEC CPU2006 benchmarks.
 | Target Binaries | OpenSSL 1.1.1f, Uroboros SPEC CPU2006 |
 
 
-
 #### 2) Dataset Preparation
 For evaluation, we utilized:
-
 - **OpenSSL 1.1.1f**: A widely used cryptographic library known for security-critical functions.
 - **Uroboros SPEC CPU2006 Binaries**: Stripped binaries used for assessing disassembly and decompilation tools.
 
@@ -53,7 +46,6 @@ Hyperparameter Tuning: Learning rate, batch size, clipping parameter.
 ### Figure 1: Black-Box Fuzzing Framework Architecture
 (A well-labeled system architecture diagram with modules: Input Generator, Execution Engine, Feedback Analyzer, RL Module.)
 
-
    ![architecture diagram](images/RE-PPO.png)
 
 ## 3. Performance Evaluation
@@ -62,13 +54,15 @@ Hyperparameter Tuning: Learning rate, batch size, clipping parameter.
 ### C. Evaluation Metrics
 To assess the effectiveness of the proposed fuzzing framework, we measured the following metrics:
 
-- **Code Coverage (%)**: The percentage of executable code paths explored during fuzzing.
-- **Crash Discovery Rate**: The number of unique crashes identified within a given timeframe.
+- Code Coverage (%) – Explored paths in binaries.
+   - **Code Coverage (%)**: The percentage of executable code paths explored during fuzzing.
+
+- Crash Discovery Rate (Crashes/sec) – Identifying vulnerabilities.
+   - **Crash Discovery Rate**: The number of unique crashes identified within a given timeframe.
+
+- Execution Speed (Test cases/sec) – Processing efficiency.
 - **Execution Speed (Test Cases per Second)**: The performance efficiency in generating and executing test cases.
 
-- Code Coverage (%) – Explored paths in binaries.
-- Crash Discovery Rate (Crashes/sec) – Identifying vulnerabilities.
-- Execution Speed (Test cases/sec) – Processing efficiency.
 
 ### 3.1 Code Coverage Analysis
 Graph (Fig. 2): Line graph showing code coverage over time for AFL++ vs. AFL++ + PPO.
