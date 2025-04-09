@@ -31,7 +31,7 @@ Hyperparameter Tuning: Learning rate, batch size, clipping parameter.
 ### Figure 1: Black-Box Fuzzing Framework Architecture
 (A well-labeled system architecture diagram with modules: Input Generator, Execution Engine, Feedback Analyzer, RL Module.)
 
-## 3. Performance Evaluation
+## 3. Performance Evaluation..
 
 ### Metrics Used
 - Code Coverage (%) – Explored paths in binaries.
