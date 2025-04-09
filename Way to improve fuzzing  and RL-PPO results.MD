@@ -187,7 +187,7 @@ plt.savefig("/mnt/data/comparison_tables.png")
 plt.show()
 ```
 
-The Python code used to generate the graphs for code coverage over time and execution speed comparison.
+The Python code is used to generate the graphs for code coverage over time and execution speed comparison.
 
 ```
 import matplotlib.pyplot as plt
