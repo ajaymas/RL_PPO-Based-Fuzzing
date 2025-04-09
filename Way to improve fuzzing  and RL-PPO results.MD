@@ -46,7 +46,7 @@ Hyperparameter Tuning: Learning rate, batch size, clipping parameter.
 ### Figure 1: Black-Box Fuzzing Framework Architecture
 (A well-labeled system architecture diagram with modules: Input Generator, Execution Engine, Feedback Analyzer, RL Module.)
 
-   ![architecture diagram](images/RE-PPO.png)
+![architecture diagram](images/RE-PPO.png)
 
 ## 3. Performance Evaluation
 
@@ -67,7 +67,7 @@ To assess the effectiveness of the proposed fuzzing framework, we measured the f
 ### 3.1 Code Coverage Analysis
 Graph (Fig. 2): Line graph showing code coverage over time for AFL++ vs. AFL++ + PPO.
 
-![raph (Fig. 2): Line graph showing code coverage over time for AFL++ vs. AFL++ + PPO](images/Code_coverage_over_time.png)
+![Graph (Fig. 2): Line graph showing code coverage over time for AFL++ vs. AFL++ + PPO](images/Code_coverage_over_time.png)
 
 Fig. 1 presents the code coverage results over time. The PPO-enhanced AFL++ achieved higher coverage compared to the standard AFL++, demonstrating improved exploration efficiency.
 
@@ -137,7 +137,7 @@ plt.savefig("/mnt/data/execution_speed.png")
 plt.show()
 
 ```
-comparison tables for crash discovery rate and RL algorithm performance.
+Comparison tables for crash discovery rate and RL algorithm performance.
 
 ![comparison tables for crash discovery rate and RL algorithm performance.](images/comparison tables.png)
 
