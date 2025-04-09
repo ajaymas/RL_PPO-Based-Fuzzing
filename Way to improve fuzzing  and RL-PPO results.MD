@@ -47,7 +47,7 @@ Hyperparameter Tuning: Learning rate, batch size, clipping parameter.
 (A well-labeled system architecture diagram with modules: Input Generator, Execution Engine, Feedback Analyzer, RL Module.)
 
 ![architecture diagram](images/RE-PPO.png)
-
+![Graph (Fig. 2): Line graph showing code coverage over time for AFL++ vs. AFL++ + PPO](images/Code_coverage_over_time.png)
 
 ## 3. Performance Evaluation
 
