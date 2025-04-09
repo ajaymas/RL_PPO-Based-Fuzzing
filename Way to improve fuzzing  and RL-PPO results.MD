@@ -96,7 +96,7 @@ plt.grid(True)
 # Save the figure
 plt.savefig("/mnt/data/code_coverage.png")
 plt.show()
-
+```
 
 
 ### 3.2 Crash Discovery Rate
